@@ -7,7 +7,7 @@ const humidity = document.getElementById("humidity");
 const wind_speed = document.getElementById("wind-speed");
 
 async function checkWeather(city) {
-  const api_key = "60a75c6eb4d4e1697953ef46bf9e1140";
+
   const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`;
 
   const weather_data = await fetch(`${URL}`).then((responce) =>
