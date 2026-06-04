@@ -8,6 +8,7 @@ const wind_speed = document.getElementById("wind-speed");
 
 async function checkWeather(city) {
 
+  // const api_key = See the .env file
   const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`;
 
   const weather_data = await fetch(`${URL}`).then((responce) =>
